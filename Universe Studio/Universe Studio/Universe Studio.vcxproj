@@ -148,7 +148,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Levels\Menu.cpp" />
+    <ClCompile Include="Levels\Presentation.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserInterface\Button.cpp" />
+    <ClCompile Include="UserInterface\UIElement.cpp" />
+    <ClCompile Include="Utilities\Align.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Levels\Level.h" />
+    <ClInclude Include="Levels\Menu.h" />
+    <ClInclude Include="Levels\Presentation.h" />
+    <ClInclude Include="UserInterface\Button.h" />
+    <ClInclude Include="UserInterface\UIElement.h" />
+    <ClInclude Include="Utilities\Align.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

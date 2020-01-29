@@ -1,22 +1,7 @@
-#include "SFML/Graphics.hpp"
+#include "Application.h" 
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1000, 600), "Universe Studio");
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-
-        window.display();
-    }
-
-    return 0;
+    Application app;
+    return app.run();
 }
